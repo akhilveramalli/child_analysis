@@ -14,7 +14,7 @@ def homepage():
 
 @app.route('/Output', methods = ['POST'])
 def home():
-    x = str(request.form['Time_Period'])
+    x = str(request.form['analysis'])
     if x == 'Behaviour':
         return render_template('Behaviour.html')
     elif x == "Emotion":
